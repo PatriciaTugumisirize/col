@@ -1,3 +1,9 @@
+
 <?php
-print "<h1>Hello, World </h1>";
-print "<p> Today is" . date("l"). "</p>";
+//include the class file
+require 'ClassAutoLoad.php';
+
+//call the methods
+$layouts->heading($conf);
+$forms->signup();
+$layouts->footer($conf);
